@@ -1,0 +1,309 @@
+@media (min-width: 1600px) {
+    .mg-left-right {
+        margin: 0 70px;
+    }
+    #top-header .main-header .main-nav > ul > li {
+        font-size: 14px;
+    }
+    .nivoSlider {
+        margin-top: 6rem;
+        height: 395px;
+        padding-top: 17px;
+    }
+    .section_hoivien {
+        margin: 0 50px;
+    }
+}
+@media (max-width: 991.98px) {
+    .modal-dialog .modal-footer .col-12 .img_modal{
+        max-width: 100px;
+        min-width: 100px;
+        height: auto;
+        margin: 0;
+    }
+    .modal-dialog .modal-footer .col-sm-3{
+        width: 20%;
+    }
+    .modal-dialog .modal-footer .col-12{
+        flex: 0 0 33%;
+        width: 20%;
+    }
+    #row_video{
+        margin-bottom: 20px;
+        margin-left: -0.5rem;
+        cursor: pointer;
+    }
+    #top-header .main-header .main-nav > ul > li {
+        display: flex;
+        position: relative;
+        line-height: 0px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        justify-content: center;
+    }
+    .logo_vpct {
+        text-align: center;
+    }
+    .header {
+        width: 100%;
+        z-index: 997;
+        position: fixed;
+        background-color: white;
+        box-shadow: 0px 2px 2px rgb(0 0 0 / 26%);
+        margin-top: -6rem;
+        height: 8rem;
+    }
+    #top-header .main-header .main-nav > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    .nivoSlider {
+        margin-top: 6rem;
+        height: 250px;
+    }
+    #top-header .main-header .main-nav > ul > li > a {
+        line-height: 40px;
+    }
+    .page-title-breadcrumbs .page-title-container h1 {
+        font-size: 30px;
+        color: white;
+        font-family: auto;
+        margin-bottom: 0;
+    }
+    .page-title-breadcrumbs .breadcrumbs {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .section.wrap-product-categories img {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (max-width: 767.98px) {
+}
+@media screen and (max-width: 575.98px) {
+    .chuyendoicongchung_h2 {
+        align-items: flex-start;
+    }
+    .content-about .item-content .sub-title h3 {
+        font-size: 16px;
+    }
+    .vanbancuahoi_div h2 {
+        font-size: 16px;
+    }
+    .tochuchanhnghecongchung_h2 {
+        font-size: 16px !important;
+    }
+    .chuyendoiso_title_div {
+        flex-direction: column;
+    }
+    .chuyendoicongchung_section .title {
+        font-size: 18px;
+    }
+    .title_main_red::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        left: 5px;
+        top: 4px;
+        bottom: 5px;
+        -webkit-transform: skew(-20deg);
+        -khtml-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+        transform: skew(-20deg);
+        background-color: #dd3333;
+    }
+    .item-content {
+        padding: 10px 0;
+    }
+    .section_hoivien {
+        margin: 0 10px;
+    }
+    .chitiet_vpcc_img {
+        margin-bottom: 10px;
+    }
+    .chitiet_vpcc_img img {
+        width: 100%;
+    }
+    .page-top {
+        padding: 0;
+        margin-top: 72px;
+    }
+    .page-title-breadcrumbs {
+        padding: 100px 0;
+        margin-top: 72px;
+    }
+    .group-store .index-core-group {
+        margin: 20px 5px;
+    }
+    .index-menu {
+        display: none;
+    }
+    .header {
+        width: auto;
+        height: 72px;
+        margin-top: -72px;
+    }
+    .logo {
+        width: 60%;
+    }
+    .nivoSlider {
+        margin-top: 72px;
+        height: 170px;
+    }
+
+    .home_slideshow{
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170px;
+    }
+    .page-title h2 {
+        color: black;
+        font-weight: bold;
+        font-size: 17px;
+        margin: 15px 0;
+    }
+    .group-store .index-core-group {
+        margin-top: 5px;
+    }
+    .menu_mb_control {
+        display: block;
+        padding: 10px;
+    }
+    .logo_vpct {
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+    .index_menu_mb {
+        position: absolute;
+        top: 72px;
+        left: -20px;
+        right: -20px;
+        background-color: #fff;
+        min-width: 100%;
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    }
+    .index_menu_mb li {
+        text-align: left;
+        width: 100%;
+        padding: 7px 30px;
+        border-bottom: 1px solid #ddd;
+    }
+    .index_menu_mb li:last-child {
+        border-bottom: unset;
+    }
+    #top-header .main-header .header-block {
+        width: 100%;
+    }
+    #top-header .main-header .header-block .popup-title {
+        line-height: 0px;
+        height: 30px;
+    }
+    #top-header .main-header .header-block i {
+        color: #8d8d99;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #top-header .main-header .header-block .popup-content {
+        padding: 15px;
+        position: absolute;
+        top: 31px;
+        background: white;
+        z-index: 999;
+        display: none;
+        right: 0;
+        -webkit-transition: opacity 0.3s linear 0s;
+        transition: opacity 0.3s linear 0s;
+        -webkit-box-shadow: 0 6px 20px rgb(0 0 0 / 18%);
+        box-shadow: 0 6px 20px rgb(0 0 0 / 18%);
+        min-width: 360px;
+    }
+    .dropdown-menu {
+        width: 100%;
+        font-size: 14px;
+    }
+    .group-store .index-core-group .item-img {
+        width: 12rem;
+    }
+    .group-store .index-core-group img {
+        height: 8rem;
+    }
+    .group-store .item-content h4 {
+        font-size: 13px;
+    }
+    .group-store .index-core-group .item-img {
+        margin-right: 10px;
+    }
+    .oars-store .page-title .title-h2 {
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+    }
+    .oars-store .index-core-group .item-content {
+        width: 100%;
+    }
+    .title.clearfix {
+        margin-top: 20px;
+    }
+    .ttchncc_item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .newsletter {
+        padding: 30px 0;
+    }
+    .page-title-breadcrumbs .breadcrumbs {
+        font-size: 18px;
+    }
+    .page-title-breadcrumbs .page-title-container h1 {
+        font-size: 24px;
+    }
+    .content-right.diemtin .title {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .content-right.diemtin {
+        padding-top: 10px;
+    }
+    .content-about .item {
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .feature-products .item {
+        margin: 0;
+    }
+    .content-right.diemtin.product {
+        margin: 10px 0;
+    }
+    .content-right.diemtin.product p {
+        font-size: 16px;
+    }
+    .thuvien_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .thuvien_item2 img {
+        width: 100%;
+    }
+    .lienhe_div {
+        margin-bottom: 15px;
+    }
+    .mg-left-right {
+        margin: 0 5px;
+    }
+}

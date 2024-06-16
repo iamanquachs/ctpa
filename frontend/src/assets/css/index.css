@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../font/OpenSans-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url("../font/OpenSans-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../font/OpenSans-Bold.ttf") format("truetype");
+  }
+
+  body {
+    font-family: "OpenSans-Regular";
+
+  }
+  /* Header */
+  .sessions_container {
+    @apply container mx-auto py-10 ;
+  }
+  
+  
+  /* End Header */
+  /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* Body */
+  .bg_body{
+    background: #f1fafe;
+  }
+  /* Banner */
+  .btn_danhmuc{
+    @apply max-w-[130px] min-w-[130px] flex items-center bg-[green] text-white rounded-md p-2 justify-center;
+    
+  }
+  /* Search form */
+  .input_search{
+    @apply form-control  relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+  }
+ 
+  .btn_search{
+    @apply absolute right-[10px] top-[8px] bottom-[10px]
+  }
+  .list_search{
+    @apply overflow-auto absolute top-11 max-h-[80vh] w-full  shadow-lg z-[9999] bg-[#f1fafe] rounded-sm
+  }
+  
+  .list_search:hover {
+    @apply block !important
+  }
+
+  .list_search_items{
+    @apply grid  grid-cols-12 p-3 items-center border-b-[1px] gap-2 hover:bg-[#ddd];
+  }
+  .active_list_search{
+    @apply block !important;
+  }
+
+  /* Login */
+  .input_login{
+    @apply form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+  }
+  .btn_login{
+    @apply inline-block px-7 py-3 bg-green-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out;
+  }
+  .close_login{
+    @apply inline-block px-7 py-3 bg-yellow-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out;
+  }
+
+  /* Sản phẩm */
+  .ten_sanpham{
+    font-family: "OpenSans-Regular";
+    @apply truncate whitespace-normal text-[14px] font-semibold text-[#023e02] hover:text-[green];
+  }
+  .img_sanpham{
+    
+    @apply flex justify-center items-center w-full pt-[100%] h-auto relative ;
+    
+  }
+  .img_sanpham img{
+    @apply absolute top-0 left-0 h-full w-full bg-white;
+    
+  }
+  .chitiet_item{
+    @apply truncate whitespace-normal text-sm font-thin;
+  }
+  .soluong{
+    @apply col-span-6 flex items-center justify-between w-full px-1  border-[1px] border-gray-400 rounded-[0.2rem]
+  }
+  .btn_dathang{
+    @apply bg-[green] col-span-6 text-xs rounded-[0.2rem] text-white  z-[100] relative hover:border-[green] border;
+  }
+  .title_sanpham{
+    font-family: "OpenSans-Bold";
+    @apply relative pl-5 italic font-black text-xl  before:absolute before:rotate-[20deg] before:w-[6px] before:h-[70%] before:top-[4px] before:left-[5px]  before:skew-y-[-20deg] before:bg-[red];
+  }
+  .giagoc{
+    @apply line-through text-sm;
+  }
+  .giaban{
+    @apply text-sm text-[red];
+  }
+  .active_nhomsp{
+    @apply bg-orange-400 px-3 h-full flex items-center text-black 
+  }
+  .active_filter{
+    @apply bg-orange-400
+  }
+
+  /* Giỏ hàng */
+  .header_tb_giohang{
+    @apply text-sm font-medium text-gray-900 px-6 py-4 text-right;
+  }
+  .item_giohang{
+    @apply text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-right;
+  }
+  /* Chi tiết sản phẩm */
+  .item_mota{
+    @apply text-left pt-5 flex flex-row items-center  after:border-b-[#ddd] after:border-b-[1px] after:m-auto after:w-full after:ml-5; 
+  }
+  .item_mota h2{
+    @apply flex flex-row font-bold text-[green] whitespace-nowrap;
+  }
+  .title_mota{
+    @apply uppercase
+  }
+  
+  /* End Body */
+  /* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* Footer */
+  .title_item_footer {
+    font-family: "OpenSans-Bold";
+    @apply  text-[16px] text-black ;
+  }
+  .item_footer li {
+    @apply  text-[#5b6a81]  text-sm py-1;
+  }
+  /* End Footer */
+
+}

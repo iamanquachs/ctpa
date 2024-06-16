@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header_res_mobile{
+    @apply mobile:hidden 
+}
+.list_search_items{
+    @apply mobile:p-1
+}
+.sessions_container{
+    @apply mobile:px-2
+}
+.container_sanpham{
+    @apply mobile:grid-cols-2 mobile:gap-3
+}
+.items_nhomsp{
+    @apply mobile:text-xs mobile:px-2 mobile:overflow-x-scroll mobile:whitespace-nowrap mobile:gap-3
+}
+.items_tieuchuan, .items_nuocsx{
+    @apply mobile:gap-2
+}
+.btn_dathang{
+    @apply mobile:text-[10px]
+}
+.item_giohang{
+    @apply mobile:text-left mobile:p-2
+}
