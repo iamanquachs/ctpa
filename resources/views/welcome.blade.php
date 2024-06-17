@@ -195,6 +195,7 @@
                                                         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScg99qrPifPCDP1EYU0VWMX8RvMj-0XKYMjnsfojrgVL2p63A/viewform" target="_blank">Đăng kí hội viên</a></li>
                                                         <li><a href="#" target="_blank">Tương tác hội viên</a></li>
                                                         <li><a href="#" target="_blank">Điểm danh</a></li>
+                                                        <li><a href="dangky-hocvien" target="_blank">Đăng ký học viên</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -289,6 +290,7 @@
                                                         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScg99qrPifPCDP1EYU0VWMX8RvMj-0XKYMjnsfojrgVL2p63A/viewform" target="_blank">Đăng kí hội viên</a></li>
                                                         <li><a href="#" target="_blank">Tương tác hội viên</a></li>
                                                         <li><a href="#" target="_blank">Điểm danh</a></li>
+                                                        <li><a href="{{URL::to('/dangky-hocvien')}}">Đăng ký học viên</a></li>
 
                                                     </ul>
                                                 </div>

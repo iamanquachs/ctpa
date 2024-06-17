@@ -19,7 +19,6 @@
         </div>
         <div class="content-about text-center container">
             <div class="title title-icon header_hoivien">
-                
                 <h2 class="title-h2">HỘI VIÊN ({{count($hoivien)}})</h2>
                 <form action="{{URL::to('/tim-kiem-hoi-vien')}}" method="post">
                     {{csrf_field()}}
