@@ -265,32 +265,18 @@ class HomeController extends Controller
     $hoivien = DB::table('hoivien')->where('trangthai', 0)->orderby('ID_HV', 'asc')->get();
     return view('page.HoiVien.HoiVien')->with('hoivien', $hoivien)->with('lienket', $lienket)->with('chuyenmucvanban', $chuyenmucvanban)->with('active_hoivien_main', $active_hoivien_main)->with('active_hoivien', $active_hoivien);
   }
-  public function dangkyhocvien()
+  public function checking()
   {
     $lienket = DB::table('lienketwebsite')->get();
-    return view('page.HoiVien.DangKy_HocVien')->with('lienket', $lienket);
+    return view('page.HoiVien.checking')->with('lienket', $lienket);
   }
 
-  public function dangkythamgia(Request $request)
+  public function diemdanh(Request $request)
   {
-    $data = array();
-    $data['lastmodify'] = date("Y-m-d H:m:s");
-    $data['soct'] = date("dmy") . rand(1000, 9999);
-    $data['hoten'] = $request->hoten;
-    $data['dienthoai'] = $request->dienthoai;
-    $data['ngaydaotao'] = date('Y-m-d');
-    $data['namsinh'] = $request->namsinh;
-    $data['cccd'] = $request->cccd;
-    $data['ngaycap'] = $request->ngaycap;
-    $data['noicap'] = $request->noicap_cccd;
-    $data['email'] = $request->email;
-    $data['vanbangchuyenmon'] = $request->vbcm;
-    $data['sochungchihanhnghe'] = $request->giayphephanhnghe;
-    $data['ngaycapchungchihanhnghe'] = $request->ngaycap_gphn;
-    $data['doituong'] = $request->doituong;
-    $data['diachinhanchungchi'] = $request->diachinhanchungchi;
-    DB::table('dangky_daotao')->InsertGetId($data);
-    return Redirect::to('/dangky-hocvien');
+    DB::table('dangky_daotao')
+      ->where('dienthoai', $request->dienthoai)
+      ->update(['time_checked' =>  NOW(), 'checked' => '1']);
+    return Redirect::to('/checking?success');
   }
 
 

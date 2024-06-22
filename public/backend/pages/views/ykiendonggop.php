@@ -13,130 +13,20 @@ if (isset($_SESSION['email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Admin Hội Dược Học</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
 
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="../assets/images/logo_item.png" />
+    <link rel="shortcut icon" href="../../assets/images/logo_item.png" />
   </head>
 
   <body>
 
     <div class="container-scroller">
       <!-- partial:../../partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="../index.php"><img src="../assets/images/logo_item.png" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="../index.php"><img src="../assets/images/logo_item.png" alt="logo" /></a>
-        </div>
-        <ul class="nav">
-          <li class="nav-item profile">
-            <div class="profile-desc">
-              <div class="profile-pic">
-
-              </div>
-
-            </div>
-          </li>
-
-
-          <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
-              </span>
-              <span class="menu-title">Chuyên Mục</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../pages/chuyenmucdiemtin/index.php">Chuyên mục điểm tin</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../pages/chuyenmucvanban/index.php">Chuyên mục văn bản</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="../pages/kienthucyduoc/kienthucyduoc.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-brain"></i>
-              </span>
-              <span class="menu-title">Kiến thức y dược</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="../pages/diemtin/diemtin.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-newspaper"></i>
-              </span>
-              <span class="menu-title">Tin tức</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="../backend/pages/chuyendoiduoc/diemtinchuyendoiduoc.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-sync"></i>
-              </span>
-              <span class="menu-title">Chuyển đổi Dược</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="../pages/thongtinyduoc/thongtinyduoc.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-book"></i>
-              </span>
-              <span class="menu-title">Thông tin y dược</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="../pages/vanban/vanban.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-book"></i>
-              </span>
-              <span class="menu-title">Văn bản</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="../pages/hoivien/danhsachhoivien.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-account-circle"></i>
-              </span>
-              <span class="menu-title">Hội viên</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="bieumau/bieumau.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-table-large"></i>
-              </span>
-              <span class="menu-title">Biểu mẫu</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="thuvien/thuvien.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-library"></i>
-              </span>
-              <span class="menu-title">Thư viện</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="khach.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-email"></i>
-              </span>
-              <span class="menu-title">Email nhận tin</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="ykiendonggop.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-chat-processing"></i>
-              </span>
-              <span class="menu-title">Ý kiến đóng góp</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <?php
+      require('../../menu.php')
+      ?>
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_navbar.html -->
@@ -266,16 +156,16 @@ if (isset($_SESSION['email'])) {
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="../assets/js/off-canvas.js"></script>
-    <script src="../assets/js/hoverable-collapse.js"></script>
-    <script src="../assets/js/misc.js"></script>
-    <script src="../assets/js/settings.js"></script>
-    <script src="../assets/js/todolist.js"></script>
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->
@@ -284,6 +174,6 @@ if (isset($_SESSION['email'])) {
   </html>
 <?php
 } else {
-  header("location: ../pages/samples/login.html");
+  header("location: ../../pages/samples/login.html");
 }
 ?>

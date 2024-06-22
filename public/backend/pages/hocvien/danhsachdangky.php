@@ -105,17 +105,14 @@
       <div class="main-panel">
         <div class="content-wrapper content-cap">
           <div class="page-header">
-            <h3 class="page-title"> HỘI VIÊN </h3>
-            <!-- <div class="box">
-              <div class="container-4">
-                <input type="search" id="search_hoivien"  placeholder="Search..." />
-                <button onclick="timkiem()" class="icon"><img src='../../assets/images/search_icon.png'></img></button>
-              </div>
-            </div> -->
+            <h3 class="page-title">Danh sách đăng ký </h3>
 
-            <a href="../hoivien/hoivien.php">
-              <button style="background-color: #0065ca; color:#fff;border-radius:5px">Thêm hội viên</button>
-            </a>
+            <form action="./inqr.php" method="POST" enctype='multipart/form-data'>
+              <select name="ngaydaotao">
+                <option value='2024-08-03'>Ngày 03-08-2024</option>
+              </select>
+              <button style="background-color: #0065ca; color:#fff;border-radius:5px">In mã QR</button>
+            </form>
           </div>
 
 
@@ -127,15 +124,16 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th> STT </th>
-                      <th> Mã hội viên</th>
-                      <th> Ảnh hội viên</th>
-                      <th> Tên hội viên</th>
-                      <th> Văn bằng</th>
-                      <th> Thông tin y tế</th>
+                      <th>STT </th>
+                      <th>Mã hội viên</th>
+                      <th>Tên hội viên</th>
+                      <th>Điện thoại</th>
+                      <th>Ngày sinh</th>
+                      <th>Đã thanh toán</th>
+                      <th>Đã đến</th>
+                      <th>Kết quả thi</th>
                       <th>Sửa</th>
                       <th>Xóa</th>
-                      <th>Ẩn</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -144,49 +142,24 @@
                     <?php
 
                     include '../../connectsql.php';
-                    include "../../assets/phpqrcode/qrlib.php";
-                    $sql = "SELECT * FROM hoivien";
-                    // $sql = "SELECT * FROM hoivien_insert";
-
-                    // $sql = "SELECT * FROM hocvien_insert ";
+                    $sql = "SELECT * FROM dangky_daotao";
                     $result = $con->query($sql);
 
                     $stt = 0;
+
                     while ($row = $result->fetch_assoc()) {
-                      // $content =  "https://ctpa.vn/hv/" . $row['ID_HV'];
-                      // $duongdanfileqr = '../../../upload/hoivien/them/' . $row['ID_HV'] . '.png';
-                      // $qr = QRcode::png($content, $duongdanfileqr, 400, 400);
-                      /**---Tạo mã học viên */
-                      // $content =  "https://ctpa.vn/chi-tiet-gxn/" . $row['id_hocvien'];
-                      // $duongdanfileqr = '../../../upload/hocvien/hocvien141223/' . $row['id_hocvien'] . '.png';
-                      // $qr = QRcode::png($content, $duongdanfileqr, 400, 400);
-                      /**--- bổ sung ảnh thiếu */
-                      // $content =  "https://ctpa.vn/chi-tiet-gxn/2703230071";
-                      // $duongdanfileqr = '../../../upload/hocvien/anh_thieu/NGUYỄN THỊ ANH THƯ.png';
-                      // $qr = QRcode::png($content, $duongdanfileqr, 400, 400);
-                      $stt = $stt + 1;
-                      // $trangthai = $row['trangthai'];
 
                       echo "<tr>
-                      <td style='text-align:center'>" . $stt . " </td>
-                      <td style='text-align:center'>" . $row['ID_HV'] . "</td>
-                      <td style='text-align:center;'><img style='width: 100px;height: auto;' src='../../../upload" . $row['ANH_HV'] . "'></td>
-                      <td style='text-align:center'>" . $row['TEN_HV'] . "</td>
-                      <td style='text-align:center'>" . $row['vanbang'] . "</td>
-                      <td style='text-align:center'><a href='thongtinyte.php?id_hv=" . $row['ID_HV'] . "'><label class='badge badge-info'>Thông tin y tế</label></a></td>
-                      <td style='text-align:center'><a href='suahoivien.php?id_hv=" . $row['ID_HV'] . "'><label class='badge badge-info'>Sửa</label></a></td>
-                      <td style='text-align:center'><a href='xoahoivien.php?id_hv=" . $row['ID_HV'] . "'><label class='badge badge-danger'>Xóa</label></a></td>
-                      <td style='text-align:center'><a href='anhoivien.php?id_hv=" . $row['ID_HV'] . "'><label class='badge badge-info'>"  ?>
-                      <?php switch ($row['trangthai']) {
-                        case 0:
-                          echo 'Ẩn';
-                          break;
-
-                        default:
-                          echo 'Hiện';
-                          break;
-                      } ?>
-                    <?php "</label></a></td>
+                        <td style='text-align:center'>" . $stt . " </td>
+                        <td style='text-align:center'>" . $row['soct'] . "</td>
+                        <td style='text-align:center'>" . $row['hoten'] . "</td>
+                        <td style='text-align:center'>" . $row['dienthoai'] . "</td>
+                        <td style='text-align:center'>" . $row['ngaysinh'] . "</td>
+                        <td style='text-align:center'>" . $row['sotien'] . "</td>
+                        <td style='text-align:center'>" . $row['time_checked'] . "</td>
+                        <td style='text-align:center'>" . $row['ketquathi'] . "</td>
+                        <td style='text-align:center'><a href='suahoivien.php?id_hv=" . $row['ID_HV'] . "'><label class='badge badge-info'>Sửa</label></a></td>
+                        <td style='text-align:center'><a href='xoahoivien.php?id_hv=" . $row['ID_HV'] . "'><label class='badge badge-danger'>Xóa</label></a></td>
                       </tr>";
                     }
                     echo "</tbody></table>";

@@ -78,8 +78,8 @@ Route::get('chi-tiet-gxn/{id_hocvien}', 'App\Http\Controllers\HoiVienController@
 
 Route::get('hv', 'App\Http\Controllers\HomeController@hoivien');
 Route::get('hv/{ID_HV}', 'App\Http\Controllers\HoiVienController@chitiethoivien');
-Route::get('/dangky-hocvien', 'App\Http\Controllers\HomeController@dangkyhocvien');
-Route::post('/dangky-thamgia', 'App\Http\Controllers\HomeController@dangkythamgia');
+Route::get('/checking', 'App\Http\Controllers\HomeController@checking');
+Route::post('/diemdanh', 'App\Http\Controllers\HomeController@diemdanh');
 
 // y kien dong gop
 Route::post('/y-kien-dong-gop', 'App\Http\Controllers\HomeController@ykiendonggop');

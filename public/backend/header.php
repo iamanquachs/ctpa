@@ -113,6 +113,14 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
+                    <a class="nav-link" href="../backend/pages/hocvien/danhsachhocvien.php">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-account-circle"></i>
+                        </span>
+                        <span class="menu-title">Học viên</span>
+                    </a>
+                </li>
+                <li class="nav-item menu-items">
                     <a class="nav-link" href="../backend/pages/bieumau/bieumau.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-table-large"></i>
@@ -129,7 +137,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../backend/pages/khach.php">
+                    <a class="nav-link" href="../backend/pages/views/khach.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-email"></i>
                         </span>
@@ -137,7 +145,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../backend/pages/ykiendonggop.php">
+                    <a class="nav-link" href="../backend/pages/views/ykiendonggop.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-chat-processing"></i>
                         </span>

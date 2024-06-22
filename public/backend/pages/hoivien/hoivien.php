@@ -1,6 +1,5 @@
 <!-- file này để thêm hội viên -->
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -31,164 +30,15 @@
 
   <div class="container-scroller">
     <!-- partial:../../partials/_sidebar.html -->
-    <nav class="sidebar sidebar-offcanvas" id="sidebar">
-      <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" href="../../index.php"><img src="../../assets/images/logo_item.png" alt="logo" /></a>
-        <a class="sidebar-brand brand-logo-mini" href="../../index.php"><img src="../../assets/images/logo_item.png" alt="logo" /></a>
-      </div>
-      <ul class="nav">
-        <li class="nav-item profile">
-          <div class="profile-desc">
-            <div class="profile-pic">
-
-            </div>
-
-          </div>
-        </li>
-
-
-        <li class="nav-item menu-items">
-          <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-            <span class="menu-icon">
-              <i class="mdi mdi-laptop"></i>
-            </span>
-            <span class="menu-title">Chuyên Mục</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="ui-basic">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="../../pages/chuyenmucdiemtin/index.php">Chuyên mục điểm tin</a></li>
-              <li class="nav-item"> <a class="nav-link" href="../../pages/chuyenmucvanban/index.php">Chuyên mục văn bản</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../kienthucyduoc/kienthucyduoc.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-brain"></i>
-            </span>
-            <span class="menu-title">Kiến thức y dược</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../diemtin/diemtin.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-newspaper"></i>
-            </span>
-            <span class="menu-title">Tin tức</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../chuyendoiduoc/diemtinchuyendoiduoc.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-sync"></i>
-            </span>
-            <span class="menu-title">Chuyển đổi dược</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../thongtinyduoc/thongtinyduoc.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-scale-balance"></i>
-            </span>
-            <span class="menu-title">Thông tin y dược</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../vanban/vanban.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-book"></i>
-            </span>
-            <span class="menu-title">Văn bản</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../hoivien/danhsachhoivien.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-account-circle"></i>
-            </span>
-            <span class="menu-title">Hội viên</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../bieumau/bieumau.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-table-large"></i>
-            </span>
-            <span class="menu-title">Biểu mẫu</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../thuvien/thuvien.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-library"></i>
-            </span>
-            <span class="menu-title">Thư viện</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../khach.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-email"></i>
-            </span>
-            <span class="menu-title">Email nhận tin</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="../ykiendonggop.php">
-            <span class="menu-icon">
-              <i class="mdi mdi-chat-processing"></i>
-            </span>
-            <span class="menu-title">Ý kiến đóng góp</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <?php
+          require('../../menu.php')
+    ?>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:../../partials/_navbar.html -->
-      <nav class="navbar p-0 fixed-top d-flex flex-row">
-
-        <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="mdi mdi-menu"></span>
-          </button>
-          <ul class="navbar-nav w-100">
-            <li class="nav-item w-100">
-              <h2>HỘI DƯỢC HỌC THÀNH PHỐ CẦN THƠ</h2>
-            </li>
-          </ul>
-          <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item dropdown">
-              <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
-                <div class="navbar-profile">
-                  <img class="img-xs rounded-circle" src="../../assets/images/faces/iconadmin.png" alt="">
-                  <p class="mb-0 d-none d-sm-block navbar-profile-name">Admin</p>
-                  <i class="mdi mdi-menu-down d-none d-sm-block"></i>
-                </div>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                <h6 class="p-3 mb-0">Thông tin tài khoản</h6>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item" href="../samples/logout.php" onclick="return confirm('Bạn có chắc là muốn đăng xuất ???');">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-logout text-danger"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject mb-1">Đăng xuất</p>
-                  </div>
-                </a>
-
-              </div>
-            </li>
-          </ul>
-          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-            <span class="mdi mdi-format-line-spacing"></span>
-          </button>
-        </div>
-      </nav>
+      <?php
+          require('../../menu_nav.php')
+      ?>
       <!-- partial -->
 
       <div class="main-panel">

@@ -18,9 +18,10 @@
                     <div style="padding-bottom: 10px;">
                         <div class="chitiet_vpcc_img">
                             <img style="max-width: 100%;
-  border-radius: 50%;
-  height: 15em;
-  width: 15em;" src="{{($hv->ANH_HV!=''?URL::to('public/upload'.$hv->ANH_HV):URL::to('public/frontend/img/hoivien_item.png'))}}">
+                                border-radius: 50%;
+                                height: 15em;
+                                width: 15em;"
+                            src="{{($hv->ANH_HV!=''?URL::to('public/upload'.$hv->ANH_HV):URL::to('public/frontend/img/hoivien_item.png'))}}">
                         </div>
 
                     </div>
@@ -99,12 +100,6 @@
                                                         <h6 style="margin: 0; color: #000;font-size: 20px">{{$hv->soBHXH}} </h6>
                                                     </td>
                                                 </tr>
-                                                <!-- <tr style="margin-top: 10px;border-top: #ddd solid 1px;">
-                                                    <th>
-
-                                                        <h4 style="color:green">Thông tin y tế</h4>
-                                                    </th>
-                                                </tr> -->
                                                 <tr>
                                                     <th>
                                                         <h6 style="margin: 0; color: #000;font-size: 20px">Nhóm máu:</h6>

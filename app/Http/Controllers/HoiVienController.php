@@ -17,8 +17,8 @@ class HoiVienController extends Controller
     //
     public function chitietgxn($id_hocvien)
     {
-        
-       $lienket = DB::table('lienketwebsite')->get();
+
+        $lienket = DB::table('lienketwebsite')->get();
 
         $hocvien = DB::table('hocvien')
             ->where('hocvien.id_hocvien', $id_hocvien)
@@ -33,7 +33,7 @@ class HoiVienController extends Controller
 
     public function chitiethoivien($ID_HV)
     {
-    $chuyenmucvanban = DB::table('chuyenmucvanban')->orderby('ID_CHUYENMUC_VB', 'desc')->get();
+        $chuyenmucvanban = DB::table('chuyenmucvanban')->orderby('ID_CHUYENMUC_VB', 'desc')->get();
 
         $lienket = DB::table('lienketwebsite')->get();
 

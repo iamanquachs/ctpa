@@ -109,6 +109,22 @@
                         <span class="menu-title">Hội viên</span>
                     </a>
                 </li>
+                <li id="show_cm" class="nav-item menu-items">
+                    <a class="nav-link" data-toggle="collapse" href="#hocvien" aria-expanded="false" aria-controls="ui-basic">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-laptop"></i>
+                        </span>
+                        <span class="menu-title">Học viên</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="hocvien">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="../../../backend/pages/hocvien/danhsachhocvien.php">Danh sách học viên</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="../../../backend/pages/hocvien/danhsachdangky.php">Danh sách đăng kí</a></li>
+
+                        </ul>
+                    </div>
+                </li>
                 <li class="nav-item menu-items">
                     <a class="nav-link" href="../../pages/bieumau/bieumau.php">
                         <span class="menu-icon">
@@ -126,7 +142,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/khach.php">
+                    <a class="nav-link" href="../../pages/views/khach.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-email"></i>
                         </span>
@@ -134,7 +150,7 @@
                     </a>
                 </li>
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="../../pages/ykiendonggop.php">
+                    <a class="nav-link" href="../../pages/views/ykiendonggop.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-chat-processing"></i>
                         </span>
